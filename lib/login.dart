@@ -6,11 +6,11 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.red,
       appBar: AppBar(
         elevation: 0,
         brightness: Brightness.light,
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.red,
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
@@ -30,12 +30,12 @@ class LoginPage extends StatelessWidget {
                 children: <Widget>[
                   Column(
                     children: <Widget>[
-                      FadeAnimation(1, Text("Login", style: TextStyle(
+                      FadeAnimation(1, Text("Iniciar sesión", style: TextStyle(
                         fontSize: 30,
                         fontWeight: FontWeight.bold
                       ),)),
                       SizedBox(height: 20,),
-                      FadeAnimation(1.2, Text("Login to your account", style: TextStyle(
+                      FadeAnimation(1.2, Text("Ingrese a su cuenta", style: TextStyle(
                         fontSize: 15,
                         color: Colors.grey[700]
                       ),)),
@@ -82,8 +82,8 @@ class LoginPage extends StatelessWidget {
                   FadeAnimation(1.5, Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      Text("Don't have an account?"),
-                      Text("Sign up", style: TextStyle(
+                      Text("¿No tienes una cuenta?"),
+                      Text("Regístrate", style: TextStyle(
                         fontWeight: FontWeight.w600, fontSize: 18
                       ),),
                     ],
@@ -95,7 +95,7 @@ class LoginPage extends StatelessWidget {
               height: MediaQuery.of(context).size.height / 3,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/background.png'),
+                  image: AssetImage('assets/mgwlogo.png'),
                   fit: BoxFit.cover
                 )
               ),
